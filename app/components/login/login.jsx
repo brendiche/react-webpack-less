@@ -4,22 +4,28 @@ import less from './login.less';
 class Login extends React.Component {
 
   constructor(props) {
-    super(props);
-    this.state = {likesCount : 0};
-    this.onLike = this.onLike.bind(this);
+    super();
+    this.state = {
+      login : "",
+      password : ""
+    };
   }
 
-  onLike () {
-    let newLikesCount = this.state.likesCount + 1;
-    this.setState({likesCount: newLikesCount});
-  }
 
   render() {
     return (
-      <div>
-        Likes : <span>{this.state.likesCount}</span>
-        <div>
-          <button className="btn" onClick={this.onLike}>Like Me</button>
+      <div className="container">
+        <div className="jumbotron">
+          <from>
+            <div className="form-group">
+              <label for="login">Login</label>
+              <input type="text" className="form-control" id="login" placeholder="Login" />
+            </div>
+            <div className="form-group">
+              <label for="password">Password</label>
+              <input type="password" className="form-control" id="password" placeholder="Password" />
+            </div>
+          </from>
         </div>
       </div>
     );

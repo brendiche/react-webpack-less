@@ -6,7 +6,6 @@ export default () => {
 	return (
 		<Router history={hashHistory}>
 			<Route path="/">
-				<IndexRoute component={Login} />
 				<Route path="login" component={Login} />
 			</Route>
 		</Router>
