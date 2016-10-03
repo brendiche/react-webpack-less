@@ -25,7 +25,7 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container login">
         <div className="jumbotron">
           <from>
             <div className="form-group">
