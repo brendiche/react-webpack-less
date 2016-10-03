@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-class AwesomeComponent extends React.Component {
+class Login extends React.Component {
 
   constructor(props) {
     super(props);
@@ -27,4 +27,4 @@ class AwesomeComponent extends React.Component {
 
 }
 
-export default AwesomeComponent;
+export { Login };

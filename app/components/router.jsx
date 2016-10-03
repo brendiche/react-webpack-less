@@ -1,5 +1,5 @@
 import React from 'react';
-import Login from './login/login.jsx';
+import { Login } from './login/login.jsx';
 import { Router, Route, IndexRoute , hashHistory} from 'react-router';
 
 export default () => {
