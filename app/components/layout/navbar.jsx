@@ -15,12 +15,12 @@ class Navbar extends React.Component {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand" href="#">Project name</a>
+            <Link className="navbar-brand" to="home">React niko-niko</Link>
           </div>
           <div id="navbar" className="collapse navbar-collapse">
             <ul className="nav navbar-nav">
               <li><Link to="home" activeClassName="active">Home</Link></li>
-              <li><Link to="login" activeClassName="active">Login</Link></li>
+              <li><Link to="login">Login</Link></li>
             </ul>
           </div>
         </div>
