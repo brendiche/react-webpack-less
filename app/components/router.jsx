@@ -1,16 +1,23 @@
 import React from 'react';
-import { Login } from './login/login.jsx';
+
 import { Layout } from './layout/layout.jsx';
+import { Login } from './login/login.jsx';
+import { Home } from './home/home.jsx';
 import { Router, Route, IndexRoute , hashHistory} from 'react-router';
 
-export default () => {
-	return (
-		<Router history={hashHistory}>
-			<Route path="/" component={Layout}>
-				<IndexRoute component={Login} />
-				<Route path="login" component={Login} />
+class App extends React.Component{
+	render(){
+		return (
+			<Router history={hashHistory}>
+				<Route path="/" component={Layout}>
+					<IndexRoute component={Home} />
+					<Route path="login" component={Login} />
+					<Route path="home" component={Home} />
 
-			</Route>
-		</Router>
-	);
+				</Route>
+			</Router>
+		);
+	}
 }
+
+export { App }
