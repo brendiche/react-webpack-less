@@ -6,7 +6,6 @@ class Layout extends React.Component {
 
   constructor() {
     super();
-    console.log(this);
   }
   
 

@@ -20,7 +20,8 @@ class Login extends React.Component {
   }
   
   login(){
-    console.log(this.state);
+    var valid = (this.state.login === 'test' && this.state.password === 'test');
+    valid ? this.props.history.push('home') : this.setState({login:'',password:''});
   }
 
   render() {
@@ -30,13 +31,13 @@ class Login extends React.Component {
           <from>
             <div className="form-group">
               <label>Login</label>
-              <input type="text" className="form-control" id="login" placeholder="Login" onChange={this.changeLogin.bind(this)}/>
+              <input type="text" className="form-control" id="login" placeholder="Login" value={this.state.login} onChange={this.changeLogin.bind(this)}/>
             </div>
             <div className="form-group">
               <label>Password</label>
-              <input type="password" className="form-control" id="password" placeholder="Password" onChange={this.changePassword.bind(this)}/>
+              <input type="password" className="form-control" id="password" placeholder="Password" value={this.state.password} onChange={this.changePassword.bind(this)}/>
             </div>
-            <button className="btn" onClick={this.login.bind(this)}>Submit</button>
+            <button type="submit" className="btn" onClick={this.login.bind(this)}>Submit</button>
           </from>
         </div>
       </div>

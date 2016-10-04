@@ -1,7 +1,7 @@
 import React from 'react';
-import { Votes } from '../votes/votes.jsx';
 
-class Home extends React.Component {
+
+class Test extends React.Component {
 
   constructor() {
     super();
@@ -11,8 +11,7 @@ class Home extends React.Component {
     return (
       <div className="hmoe">
         <div className="jumbotron">
-          <h2>Votes</h2>
-          <Votes></Votes>
+          <h1>Test</h1>
         </div>
       </div>
     );
@@ -20,4 +19,4 @@ class Home extends React.Component {
 
 }
 
-export { Home };
+export { Test };
